@@ -32,5 +32,12 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "iostream": "cpp",
+    "random": "cpp",
+    "iosfwd": "cpp",
+    "initializer_list": "cpp",
+    "ostream": "cpp"
+  }
 }
