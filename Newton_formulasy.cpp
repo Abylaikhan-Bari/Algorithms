@@ -5,9 +5,9 @@ using namespace std;
 
 // Newton formulasyn qoldanu arqyly sannyn nubirin anyqtau
 double sqrtNewton(double x) {
-    double eps = 1e-6; // esepteu daldigi
+    double daldik = 0.0001; // esepteu daldigi
     double s = x; // bastapqy jaqyndatu
-    while (abs(s - x/s) > eps) {
+    while (abs(s - x/s) > daldik) {
         s = (s + x/s) / 2.0; // Newton formulasy
     }
     return s;
