@@ -3,12 +3,14 @@ using namespace std;
 
 int main(){
 
-   int A [3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9}; 
-   int B [3][1] = {1, 2, 3};
+   int A [3][3] = {5, 7, 0, 4, 3, 1, 9, 1, 4}; 
+   int B [3][1] = {7, 2, 4};
    int C [3][3]; 
    int D [3][1]; 
 
    //Matricalardyn bastapqy turi
+    cout << "\nBastapqy turi: " << endl;
+    cout << "\nA: " << endl << endl;
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 3; j++){
             cout << A[i][j] << " ";
@@ -16,6 +18,7 @@ int main(){
         cout << endl;
     }
     cout << endl;
+    cout << "B: " << endl << endl;
     for (int i = 0; i < 3; i++){
         for (int j = 0; j < 1; j++){
             cout << B[i][j] << " ";
@@ -34,7 +37,7 @@ int main(){
        }
    }
     // Natizheni shygaru
-    cout << endl << "A + B = C" << endl;
+    cout << endl << "A + B = C" << endl << endl;
     for (int i = 0; i < 3; i++) {
        for (int j = 0; j < 3; j++) {
            cout << C[i][j] << " ";
@@ -52,12 +55,14 @@ int main(){
        for (int j = 0; j < 3; j++) {
            sum += A[i][j] * B[j][0]; 
        }
-       C[i][0] = sum;
+       D[i][0] = sum;
    }
-    cout << endl << "A * B = D" << endl;
+    cout << endl << "A * B = D" << endl << endl;
     // Natizheni shygaru
    for (int i = 0; i < 3; i++) {
        cout << D[i][0] << endl;
    }
+
+   cout << endl;
     return 0;
 }
