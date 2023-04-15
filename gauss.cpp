@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     // Initialize the coefficients of the system of equations
-    double a[3][3] = {{1, 1, -1}, {2, -1, 1}, {3, 2, -1}};
+    double a[3][3] = {{1, -1, 1}, {2, -1, 1}, {3, -2, 1}};
     // Initialize the constants of the system of equations
     double b[3] = {8, 16, 24};
     // Initialize the solution vector
@@ -50,9 +50,9 @@ int main() {
 
     // Print the solution vector
     cout << "\nThe solution to the system of linear equations is: " << endl;
-    cout << "x1 = " << x[0] << endl;
-    cout << "x2 = " << x[1] << endl;
-    cout << "x3 = " << x[2] << endl << endl;
+    cout << "x = " << x[0] << endl;
+    cout << "y = " << x[1] << endl;
+    cout << "z = " << x[2] << endl << endl;
 
     return 0;
 }
